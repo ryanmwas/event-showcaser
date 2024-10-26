@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Showcase</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Marquee -->
+    <div class="marquee">
+        <marquee behavior="" direction="" id="featured-event">Welcome to Our Upcoming Event: Music Festival 2024!</marquee>
+    </div>
+    <!-- Gallery -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/event1.jpg" alt="Event 1" onclick="openModal('Event 1','Description of event 1','images/event1.jpg')">
+            <p>Event 1</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/event2.jpg" alt="Event 2" onclick="openModal('Event 2','Description of event 2','images/event2.jpg')">
+            <p>Event 2</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/event3.jpg" alt="Event 3" onclick="openModal('Event 3','Description of event 3','images/event3.jpg')">
+            <p>Event 3</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/event4.jpg" alt="Event 4" onclick="openModal('Event 4','Description of event 4','images/event4.jpg')">
+            <p>Event 4</p>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">
+                &times;
+            </span>
+            <h2 id="modal-title"></h2>
+            <img src="" alt="" id="modal-image">
+            <p id="modal-description">lorem ipsum</p>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
